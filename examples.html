@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='ie=edge' http-equiv='x-ua-compatible'>
+    <title>Chemistry Template 2</title>
+    <meta content='' name='description'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='assets/stylesheets/application.css' rel='stylesheet'>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      
+      section {
+        padding: 4rem 0 8rem;
+      }
+      section > h2:first-child {
+        margin-bottom: 4rem;
+      }
+      
+      article:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+      article > h3:first-child {
+        margin-bottom: 2rem;
+      }
+      article > h5:not(:last-child),
+      article > ul:not(:last-child),
+      article > p:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      article > hr {
+        display: block;
+        margin-bottom: 4rem;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+      }
+      article > .grid > .grid__item > p {
+        padding: 1rem;
+      }
+      article > .grid > .grid__item:nth-child(even) > p {
+        background: #ccc;
+      }
+      article > .grid > .grid__item:nth-child(odd) > p {
+        background: #eee;
+      }
+      
+      form > fieldset:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+      form > fieldset > legend {
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+      form > fieldset > div:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      
+      .content img {
+        max-height: 30rem;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header class='site-header'>
+      <div class='site-header__top-info'>
+        <div class='container'>
+          <div class='site-header__inner'>
+            <div class='site-header__logo'>
+              <img src='assets/images/logo.png'>
+              <p>
+                Строительство бань,
+                <br>
+                саун и&nbsp;SPA &laquo;под ключ&raquo;
+              </p>
+            </div>
+            <div class='site-header__cart'>
+              <svg class='icon icon--cart' data-size='3632'>
+                <use xlink:href='#cart'></use>
+              </svg>
+              <div class='site-header__cart-text'>
+                <a href='#'>
+                  Моя корзина
+                </a>
+                <span>
+                  187 490&#8381;
+                </span>
+              </div>
+            </div>
+            <div class='site-header__phone'>
+              <div class='site-header__phone-info'>
+                <svg class='icon icon--phone' data-size='21'>
+                  <use xlink:href='#phone'></use>
+                </svg>
+                <p>
+                  +7 495 227-87-30
+                </p>
+              </div>
+              <div class='site-header__phone-text'>
+                <p>
+                  Режим работы: с 9:00 до 20:00
+                </p>
+              </div>
+            </div>
+            <div class='site-header__btn-phone'>
+              <a href='#'>
+                Заказать звонок
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='site-header__menu'>
+        <div class='container'>
+          <div class='site-header__menu-inner'>
+            <ul class='site-header__menu-links'>
+              <li>
+                <a href='#'>
+                  <svg class='icon icon--home' data-size='2017'>
+                    <use xlink:href='#home'></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  О компании
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Каталог товаров
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Строительство
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Оплата
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Доставка
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Акции
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class='site-header__menu-search'>
+              <div class='site-header__search'>
+                <input placeholder='название товара' type='text'>
+                <svg class='icon icon--search' data-size='17'>
+                  <use xlink:href='#search'></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role='main'>
+      <div class='container'>
+        <section aria-labelledby='examples-heading'>
+          <h2 id='examples-heading'>Examples</h2>
+          <article role='article'>
+            <h3>Grid</h3>
+            <hr>
+            <div class='grid'><div class='grid__item grid__item--sm-grid-1-3'>
+                <p>1/3</p>
+              </div><div class='grid__item grid__item--sm-grid-1-3'>
+                <p>1/3</p>
+              </div><div class='grid__item grid__item--sm-grid-1-3'>
+                <p>1/3</p>
+              </div></div>
+            <br>
+            <p>More complex examples coming soon...</p>
+          </article>
+          <article role='article'>
+            <h3>Forms</h3>
+            <hr>
+            <form action='#' class='form'>
+              <fieldset>
+                <legend>Button</legend>
+                <div>
+                  <a class='button' href='#'>Link</a>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-1-3'>
+                      <div class='form__item form__item--block form__item--button'>
+                        <input type='reset' value='Reset'>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-2-3'>
+                      <div class='form__item form__item--block form__item--button'>
+                        <input type='submit' value='Submit'>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='form__item form__item--block form__item--button'>
+                    <button disabled type='button'>
+                      <i class='fa fa-refresh'></i>
+                      Button
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Text</legend>
+                <div>
+                  <div class='form__item form__item--text'>
+                    <input placeholder='Placeholder' type='text'>
+                  </div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-1-3'>
+                      <div class='form__item form__item--block form__item--text'>
+                        <input class='is-valid' type='text' value='Valid'>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-2-3'>
+                      <div class='form__item form__item--block form__item--text'>
+                        <input class='is-invalid' type='text' value='Invalid'>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='form__item form__item--block form__item--text'>
+                    <input disabled type='text' value='Disabled'>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Textarea</legend>
+                <div>
+                  <div class='form__item form__item--textarea'>
+                    <textarea placeholder='Placeholder' rows='2'></textarea>
+                  </div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-1-3'>
+                      <div class='form__item form__item--block form__item--textarea'>
+                        <textarea class='is-valid' rows='3'>Valid</textarea>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-2-3'>
+                      <div class='form__item form__item--block form__item--textarea'>
+                        <textarea class='is-invalid' rows='4'>Invalid</textarea>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='form__item form__item--block form__item--textarea'>
+                    <textarea disabled rows='5'>Disabled</textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Select</legend>
+                <div>
+                  <div class='form__item form__item--select'>
+                    <select>
+                      <option selected>Select</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                    <svg>
+                      <polygon points='9,11 19,11 14,16'></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-1-3'>
+                      <div class='form__item form__item--block form__item--select'>
+                        <select class='is-valid'>
+                          <option selected>Select</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <svg>
+                          <polygon points='9,11 19,11 14,16'></polygon>
+                        </svg>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='grid'><div class='grid__item grid__item--sm-grid-1-1 grid__item--md-grid-2-3'>
+                      <div class='form__item form__item--block form__item--select'>
+                        <select class='is-invalid'>
+                          <option selected>Select</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <svg>
+                          <polygon points='9,11 19,11 14,16'></polygon>
+                        </svg>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <div class='form__item form__item--block form__item--select'>
+                    <select disabled>
+                      <option selected>Select</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                    <svg>
+                      <polygon points='9,11 19,11 14,16'></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Checkbox</legend>
+                <div>
+                  <div class='grid'><div class='grid__item'>
+                      <div class='form__item form__item--checkbox'>
+                        <input checked type='checkbox'>
+                        <svg>
+                          <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--checkbox'>
+                        <input class='is-valid' type='checkbox'>
+                        <svg>
+                          <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--checkbox'>
+                        <input class='is-invalid' type='checkbox'>
+                        <svg>
+                          <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--checkbox'>
+                        <input disabled type='checkbox'>
+                        <svg>
+                          <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--checkbox'>
+                        <input checked disabled type='checkbox'>
+                        <svg>
+                          <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                        </svg>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <label class='form__item form__item--label has-input'>
+                    <span class='form__item form__item--checkbox'>
+                      <input type='checkbox'>
+                      <svg>
+                        <rect height='8' rx='2' ry='2' width='8' x='4' y='4'></rect>
+                      </svg>
+                    </span>
+                    Checkbox
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Radio</legend>
+                <div>
+                  <div class='grid'><div class='grid__item'>
+                      <div class='form__item form__item--radio'>
+                        <input checked name='radio1' type='radio'>
+                        <svg>
+                          <circle cx='8' cy='8' r='4'></circle>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--radio'>
+                        <input class='is-valid' name='radio1' type='radio'>
+                        <svg>
+                          <circle cx='8' cy='8' r='4'></circle>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--radio'>
+                        <input class='is-invalid' name='radio1' type='radio'>
+                        <svg>
+                          <circle cx='8' cy='8' r='4'></circle>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--radio'>
+                        <input disabled name='radio1' type='radio'>
+                        <svg>
+                          <circle cx='8' cy='8' r='4'></circle>
+                        </svg>
+                      </div>
+                    </div><div class='grid__item'>
+                      <div class='form__item form__item--radio'>
+                        <input checked disabled name='radio2' type='radio'>
+                        <svg>
+                          <circle cx='8' cy='8' r='4'></circle>
+                        </svg>
+                      </div>
+                    </div></div>
+                </div>
+                <div>
+                  <label class='form__item form__item--label has-input'>
+                    <span class='form__item form__item--radio'>
+                      <input type='Radio'>
+                      <svg>
+                        <circle cx='8' cy='8' r='4'></circle>
+                      </svg>
+                    </span>
+                    Radio
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </article>
+          <article role='article'>
+            <h3>Styles</h3>
+            <hr>
+            <p>
+              Number:
+              <span class='is-number'>1000000</span>
+            </p>
+            <p>
+              USD:
+              <span class='is-money is-money--usd'>1000000</span>
+            </p>
+            <p>
+              EUR:
+              <span class='is-money is-money--eur'>1000000</span>
+            </p>
+            <p>
+              RUB:
+              <span class='is-money is-money--rub is-money--arial'>1000000</span>
+            </p>
+            <p>
+              RUB sign:
+              <span class='is-rub is-rub--arial'>Р</span>
+            </p>
+          </article>
+          <article role='article'>
+            <h3>Links</h3>
+            <hr>
+            <h5>
+              <a href='#'>Link in heading</a>
+            </h5>
+            <h5>
+              <a class='pseudo pseudo--self' href='#'>Pseudo link in heading</a>
+            </h5>
+            <p>
+              <a href='#'>Link</a>
+            </p>
+            <p>
+              <a class='link' href='#'>
+                Link with
+                <span class='link__inner'>partially underlined</span>
+                text
+              </a>
+            </p>
+            <p>
+              <a class='pseudo pseudo--self' href='#'>Pseudo link</a>
+            </p>
+            <p>
+              <a class='pseudo' href='#'>
+                Pseudo link with
+                <span class='pseudo__inner'>partially underlined</span>
+                text
+              </a>
+            </p>
+          </article>
+          <article role='article'>
+            <h3>Content</h3>
+            <hr>
+            <div class='content'>
+              <h4>Inline styles</h4>
+              <p>
+                paragraph
+                <a href='#'>link</a>
+                <abbr title='abbreviation'>abbr</abbr>
+                <dfn title='definition'>dfn</dfn>
+                <b>bold</b>
+                <strong>strong</strong>
+                <i>italic</i>
+                <em>emphasis</em>
+                <del>deleted</del>
+                <ins>inserted</ins>
+                <q cite='#'>quotation</q>
+                <small>small</small>
+                <sub>subscript</sub>
+                <sup>superscript</sup>
+              </p>
+              <h4>Block styles</h4>
+              <h5>Blockquote</h5>
+              <blockquote cite='#'>Blockquote</blockquote>
+              <h5>Lists</h5>
+              <dl>
+                <dt>Definition title</dt>
+                <dd>Definition description</dd>
+              </dl>
+              <ol>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+                <li>
+                  Ordered list item
+                  <ol>
+                    <li>Nested ordered list item</li>
+                    <li>Nested ordered list item</li>
+                    <li>
+                      Nested ordered list item
+                      <ol>
+                        <li>Nested ordered list item</li>
+                        <li>Nested ordered list item</li>
+                        <li>Nested ordered list item</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+              <ul>
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+                <li>
+                  Unordered list item
+                  <ul>
+                    <li>Nested unordered list item</li>
+                    <li>Nested unordered list item</li>
+                    <li>
+                      Nested unordered list item
+                      <ul>
+                        <li>Nested unordered list item</li>
+                        <li>Nested unordered list item</li>
+                        <li>Nested unordered list item</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <h5>Images</h5>
+              <img alt='' src='/assets/images/core/blank-landscape.gif'>
+              <figure>
+                <img alt='' src='/assets/images/core/blank-landscape.gif'>
+                <figcaption>Figcaption</figcaption>
+              </figure>
+              <h5>Table</h5>
+              <table>
+                <caption>Caption</caption>
+                <thead>
+                  <tr>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                  <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                  <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan='3'>Footer</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class='site-footer' id='footer' role='contentinfo'>
+      <div class='container'>
+        <div class='site-footer__inner'>
+          <div class='site-footer__copyright'>
+            <p class='site-footer__copyright-text'>
+              © 2016. Строительная компания «Вариант»
+            </p>
+            <div class='site-footer__pay'>
+              <p>
+                Мы принимаем
+                <br>
+                к оплате:
+              </p>
+              <a href='#'>
+                <svg class='icon icon--visa' data-size='4414'>
+                  <use xlink:href='#visa'></use>
+                </svg>
+              </a>
+              <a href='#'>
+                <svg class='icon icon--mastercard' data-size='3119'>
+                  <use xlink:href='#mastercard'></use>
+                </svg>
+              </a>
+              <a href='#'>
+                <svg class='icon icon--yandex' data-size='2021'>
+                  <use xlink:href='#yandex'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class='site-footer__block'>
+            <div class='site-footer__phone-info'>
+              <svg class='icon icon--phone' data-size='17'>
+                <use xlink:href='#phone'></use>
+              </svg>
+              <p>
+                +7 495 227-87-30
+              </p>
+            </div>
+            <div class='site-footer__address-info'>
+              <svg class='icon icon--address' data-size='1522'>
+                <use xlink:href='#address'></use>
+              </svg>
+              <p>
+                Москва, 1-й Нагатинский проезд,дом. 2, строение 2
+              </p>
+            </div>
+          </div>
+          <div class='site-footer__block'>
+            <div class='site-footer__block-text'>
+              Присоединяйтесь!
+            </div>
+            <div class='site-footer__block-social'>
+              <a class='icon--eclipse' href='#'>
+                <svg class='icon icon--social1' data-size='18'>
+                  <use xlink:href='#social1'></use>
+                </svg>
+              </a>
+              <a class='icon--eclipse' href='#'>
+                <svg class='icon icon--social2' data-size='1914'>
+                  <use xlink:href='#social2'></use>
+                </svg>
+              </a>
+              <a class='icon--eclipse' href='#'>
+                <svg class='icon icon--social3' data-size='2112'>
+                  <use xlink:href='#social3'></use>
+                </svg>
+              </a>
+              <a class='icon--eclipse' href='#'>
+                <svg class='icon icon--social4' data-size='1814'>
+                  <use xlink:href='#social4'></use>
+                </svg>
+              </a>
+              <a class='icon--eclipse' href='#'>
+                <svg class='icon icon--social5' data-size='918'>
+                  <use xlink:href='#social5'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class='site-footer__link'>
+            <p>
+              Создание сайтов
+            </p>
+            <a href='#'>
+              <img src='assets/images/footer.png'>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src='http://code.jquery.com/ui/1.11.4/jquery-ui.min.js'></script>
+    <script src='assets/javascripts/application.js'></script>
+    <script src='assets/javascripts/components/_sticky_footer.js'></script>
+    <script src='assets/javascripts/components/_send_form.js'></script>
+  </body>
+</html>
