@@ -16,7 +16,6 @@ $(window).load(function() {
 $(document).ready(function(){
     $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
         var form_data = $(this).serialize(); //собераем все данные из формы
-        alert(form_data);
 
         $(this).find('input.necessarily, textarea.necessarily').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
             if ($(this).val() == '') { // eсли нaхoдим пустoe
