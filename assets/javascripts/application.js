@@ -30,7 +30,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST", //Метод отправки
-            url: "mail.php", //путь до php фаила отправителя
+            url: "/mail.php", //путь до php фаила отправителя
             data: form_data,
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
