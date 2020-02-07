@@ -4144,6 +4144,7 @@ input[type="button"].btn-block {
   padding: 1.5rem 0 1.5rem 0;
   z-index: 5; }
   .header__inner {
+    display: table-cell;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4177,6 +4178,9 @@ input[type="button"].btn-block {
       .header__logo svg {
         width: 6.375rem;
         height: 1.6875rem; } }
+  @media (max-width: 767.98px) {
+    .header .header__info {
+      display: none; } }
   .header__info-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4190,9 +4194,6 @@ input[type="button"].btn-block {
     .header__info:last-of-type {
       margin-left: 28px;
       margin-left: 1.75rem; }
-    @media (max-width: 767.98px) {
-      .header__info {
-        display: none; } }
   .header__phone {
     font-family: "MuseoSansCyrl-700", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 24px;
@@ -4319,6 +4320,9 @@ input[type="button"].btn-block {
     @media (max-width: 767.98px) {
       .menu .header__phone, .menu .header__info {
         display: block; } }
+  .menu .header__info svg {
+    height: 38px;
+    height: 2.375rem; }
 
 .body--overflow {
   overflow: hidden; }
