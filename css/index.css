@@ -4144,7 +4144,6 @@ input[type="button"].btn-block {
   padding: 1.5rem 0 1.5rem 0;
   z-index: 5; }
   .header__inner {
-    display: table-cell;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4223,10 +4222,12 @@ input[type="button"].btn-block {
       transition: .4s; }
     .header__menu--active path:first-child {
       -webkit-transform: rotate(-45deg) translate(-14px, 24px);
-              transform: rotate(-45deg) translate(-14px, 24px); }
+      -ms-transform: rotate(-45deg) translate(-14px, 24px);
+      transform: rotate(-45deg) translate(-14px, 24px); }
     .header__menu--active path:last-child {
       -webkit-transform: rotate(45deg) translate(2px, -23px);
-              transform: rotate(45deg) translate(2px, -23px); }
+      -ms-transform: rotate(45deg) translate(2px, -23px);
+      transform: rotate(45deg) translate(2px, -23px); }
 
 .footer__inner {
   width: 100%;
